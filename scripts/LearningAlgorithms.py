@@ -66,10 +66,6 @@ class ClassificationAlgorithms:
             ordered_scores.append(best_perf)
         return selected_features, ordered_features, ordered_scores
 
-    # Apply a neural network for classification upon the training data (with the specified composition of
-    # hidden layers and number of iterations), and use the created network to predict the outcome for both the
-    # test and training set. It returns the categorical predictions for the training and test set as well as the
-    # probabilities associated with each class, each class being represented as a column in the data frame.
     def feedforward_neural_network(
         self,
         train_X,
